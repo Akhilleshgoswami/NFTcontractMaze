@@ -1,0 +1,60 @@
+{
+  "storage": [
+    {
+      "astId": 5013,
+      "contract": "contracts/storage/storage.sol:MazeStorage",
+      "label": "name",
+      "offset": 0,
+      "slot": "0",
+      "type": "t_string_storage"
+    },
+    {
+      "astId": 5016,
+      "contract": "contracts/storage/storage.sol:MazeStorage",
+      "label": "numOfNFT",
+      "offset": 0,
+      "slot": "1",
+      "type": "t_uint256"
+    },
+    {
+      "astId": 5023,
+      "contract": "contracts/storage/storage.sol:MazeStorage",
+      "label": "supplyCap",
+      "offset": 0,
+      "slot": "2",
+      "type": "t_array(t_uint256)dyn_storage"
+    },
+    {
+      "astId": 5027,
+      "contract": "contracts/storage/storage.sol:MazeStorage",
+      "label": "__maze_gap",
+      "offset": 0,
+      "slot": "3",
+      "type": "t_array(t_uint256)59_storage"
+    }
+  ],
+  "types": {
+    "t_array(t_uint256)59_storage": {
+      "base": "t_uint256",
+      "encoding": "inplace",
+      "label": "uint256[59]",
+      "numberOfBytes": "1888"
+    },
+    "t_array(t_uint256)dyn_storage": {
+      "base": "t_uint256",
+      "encoding": "dynamic_array",
+      "label": "uint256[]",
+      "numberOfBytes": "32"
+    },
+    "t_string_storage": {
+      "encoding": "bytes",
+      "label": "string",
+      "numberOfBytes": "32"
+    },
+    "t_uint256": {
+      "encoding": "inplace",
+      "label": "uint256",
+      "numberOfBytes": "32"
+    }
+  }
+}
