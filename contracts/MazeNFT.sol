@@ -262,6 +262,7 @@ contract SD2023 is
         )
     {
         super._burn(tokenId);
+         _resetTokenRoyalty(tokenId);
     }
 
     function tokenURI(
