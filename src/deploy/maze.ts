@@ -53,8 +53,8 @@ const deployContract: DeployFunction = async function (
     MazeProxys.address,
     deployer
   );
-const data =  await MazeModuleProxy.connect(signer).initialize(TOKEN_NAME,SYMBOL,CONTRACT_URI,BASE_URI,SUPPLY_CAP,signer.address,signer.address,OPENSEA_PROXY)
-console.log(data)
+// const data =  await MazeModuleProxy.connect(signer).initialize(TOKEN_NAME,SYMBOL,CONTRACT_URI,BASE_URI,SUPPLY_CAP,signer.address,signer.address,OPENSEA_PROXY)
+// console.log(data)
   // console.log(await MazeNFT.methods.owner().call()) 
 
   await verifyContract(hre, MazeProxys.address, [

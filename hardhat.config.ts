@@ -84,9 +84,13 @@ export default {
       ...sharedNetworkConfig,
       url: `https://polygon-mumbai.g.alchemy.com/v2/${process.env.INFURA_KEY}`,
     },
+    polygon: {
+      ...sharedNetworkConfig,
+      url: `https://polygon-mainnet.g.alchemy.com/v2/${process.env.INFURA_KEY}`,
+    },
   },
   etherscan: {
-    apiKey: process.env.ARBITRUM_API_KEY,
+    apiKey: process.env.POLYGON_API_KEY,
   },
   watcher: {
     /* run npx hardhat watch compilation */
